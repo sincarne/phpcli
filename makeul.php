@@ -5,7 +5,9 @@
   while ( !feof($stdin) ) {
     $line = fgets($stdin);
     $line = str_replace(array("\r", "\n"), '', $line);
-    $output .= "\t<li>" . $line . "</li>\n";
+    if ($line != '') {
+      $output .= "\t<li>" . $line . "</li>\n";
+    }
   }
   
   fclose( $stdin );
