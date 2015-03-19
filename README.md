@@ -14,3 +14,8 @@ makeul.php
 Gets input via `stdin`. Converts each line of what's input into a separate list item in an unordered list. On a Mac, recommended usage is:
 
     pbpaste | makeul.php | pbcopy
+
+forecast.php
+------------
+
+Get a quick summary of the current weather conditions from http://forecast.io. Before use, you'll need to get an API key from http://developer.forecast.io.
