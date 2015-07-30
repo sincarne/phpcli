@@ -12,6 +12,7 @@ Usage: webloc2md [Source Directory]
 
 EOF;
 } else {
+    shell_exec("plutil -convert xml1 "  . $argv[1] . "/*.webloc");
     $dirContents = scandir($argv[1]);
     foreach ($dirContents as $file) {
         if (pathinfo($argv[1] . '/' . $file, PATHINFO_EXTENSION) == 'webloc') {
